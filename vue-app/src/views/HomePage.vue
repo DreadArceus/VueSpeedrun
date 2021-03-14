@@ -1,5 +1,7 @@
 <template>
-  <h1>Home Page</h1>
+  <div id="home">
+    <h1>For gopniks by gopniks of gopniks</h1>
+  </div>
 </template>
 
 <script>

@@ -1,7 +1,22 @@
 <template>
   <div id="navbar">
-    <router-link :to="{ name: 'HomePage' }" class="link">Home</router-link>
-    <router-link :to="{ name: 'LoginPage' }" class="link">Login</router-link>
+    <div id="left">
+      <v-btn id="drawer-btn" icon color="secondary">
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+    </div>
+    <div id="right">
+      <router-link :to="{ name: 'HomePage' }">
+        <v-btn text color="secondary">
+          Home
+        </v-btn>
+      </router-link>
+      <router-link :to="{ name: 'LoginPage' }">
+        <v-btn text color="secondary">
+          Login
+        </v-btn>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -13,13 +28,13 @@ export default {
 
 <style>
 #navbar {
-  text-align: right;
-  background-color: black;
   padding: 15px;
-  margin: 0;
+  padding-bottom: 55px;
 }
-.link {
-  margin-right: 6px;
-  color: white;
+#left {
+  float: left;
+}
+#right {
+  float: right;
 }
 </style>
