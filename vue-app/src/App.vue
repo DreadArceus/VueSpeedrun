@@ -32,7 +32,7 @@ export default {
     offsetStyle() {
       return {
         transform: `translateY(${this.offset})`,
-        height: `calc(100vh - ${this.offset})`,
+        minHeight: `calc(100vh - ${this.offset})`,
       };
     },
   },
@@ -53,6 +53,7 @@ export default {
   left: 0;
   width: 100%;
   z-index: 100;
+  background-color: black;
 }
 #base {
   background-color: #2c3e50;
@@ -60,7 +61,6 @@ export default {
 }
 #main {
   overflow: auto;
-  background-color: black;
 }
 html {
   scrollbar-width: none;
